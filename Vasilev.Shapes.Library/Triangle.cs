@@ -5,10 +5,10 @@ namespace Vasilev.Shapes.Library
     public class Triangle : IShape
     {
         // It's a really rough estimation for the maximum allowed number. 
-        // If it required it's possible to find out the more precise value
+        // In case of necessity it's possible to find out the more precise value
         public static double MaxAllowedValue = Math.Sqrt(Math.Sqrt(double.MaxValue / 4));
         // It's a really rough estimation for the minimum allowed number. 
-        // maybe we have to calculate a better limit 
+        // In case of necessity we have to calculate a better limit 
         public static double MinAllowedValue = 2 * Math.Sqrt(Math.Sqrt(double.Epsilon));
         // sizes should not be greater each other in 1E14 times, otherwise there will be lost of precision
         public static double MaxAllowedRelativeDifference = 1E14;
